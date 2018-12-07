@@ -1,0 +1,190 @@
+
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+	<meta charset="utf-8" />
+
+	<title>Le Cloud Blog</title>
+	<meta name="description" content="" />
+	<meta name="color:Background" content="#E2E1DE" />
+	<meta name="image:Header" content="" />
+	<link rel="shortcut icon" href="https://66.media.tumblr.com/avatar_f8513a3164aa_128.pnj" />
+	<link rel="alternate" type="application/rss+xml" href="http://www.lecloud.net/rss" />
+
+	<link href="{{ url_for('static', filename='css/stat-reset.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/stat-super.css') }}" rel="stylesheet">
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/stat-modernizr-1.1.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/stat-hacks.js') }}"></script>
+
+	<style type="text/css" media="screen">
+		body { background-color: #E2E1DE; }
+		.tag, .search_query { font-weight: bold; }
+	</style>
+</head>
+<body>
+<div id="tools"><a href="{{ url_for('auth.login') }}">login</a></div>
+<div id="stat-wrapper-1"></div>
+<div id="stat-wrapper-2"></div>
+
+<div id="stat-wrapper">
+
+<header id="stat-header">
+	<hgroup>
+
+		<h1><a href="/" title="Home" >Now Return Blog</a></h1>
+		<h2>~ Cloud Computing & High Scalability ~</h2>
+	</hgroup>
+</header><!-- END#stat-header -->
+
+<aside id="stat-sidebar">
+
+	<section id="stat-about">
+		<img class="stat-tumblr-avatar" src="https://66.media.tumblr.com/avatar_f8513a3164aa_64.pnj" alt="Le Cloud Blog" />
+		<h2></h2>
+		<div class="stat-about-content">Sebastian Kreutzberger, founder & CEO stealth startup. Co-founder / CEO / CTO at VC-backed startups like RhodeCode and Wunderlist.</div>
+		<div class="stat-about-extras">
+			<span><a href="/ask">Contact Me</a></span>
+
+		</div>
+		<div class="stat-clear"></div>
+	</section>
+
+	<section id="stat-search" class="stat-boxed">
+		<form action="/search" method="get">
+			<input id="stat-search-input" type="text" name="q" value="" />
+			<button id="stat-search-button" type="submit">Search</button>
+		</form>
+	</section>
+
+	<section id="stat-more">
+
+
+		<nav class="stat-blog-tools">
+			<h2></h2>
+			<ul>
+				<li><a rel="archives" href="/archive">Archive</a></li>
+				<li><a rel="alternate" type="application/rss+xml" href="http://www.lecloud.net/rss">RSS</a></li>
+			</ul>
+		</nav>
+
+	</section>
+
+
+	<section id="stat-tweets" class="stat-boxed">
+		<h2>Latest Tweet</h2>
+		<ul id="stat-tweet"></ul>
+	</section>
+
+
+
+	<section id="stat-likes" class="stat-boxed">
+		<h2>Likes</h2>
+		<ul id="likes"><li class="like_post like_text_post"><div class="post_info_top" style="display:none;"><a href="https://davidhauser.com/post/35203066523/advice-from-21-entrepreneurs">Post</a> <span class="via">via</span> <a href="https://davidhauser.com/">davidhauser</a></div><div class="like_title">
+                25 Entrepreneurs Tell What They Wish They&#039;d Known before Founding Their First Startup            </div><p>Hindsight is 20/20. When you look back on any project or...</p>
+
+            <div class="post_info_bottom" style="display:none;"><a href="https://davidhauser.com/post/35203066523/advice-from-21-entrepreneurs">Post</a> <span class="via">via</span> <a href="https://davidhauser.com/">davidhauser</a></div></li><li class="like_post like_text_post"><div class="post_info_top" style="display:none;"><a href="http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances">Post</a> <span class="via">via</span> <a href="http://instagram-engineering.tumblr.com/">instagram-engineering</a></div><div class="like_title">
+                What Powers Instagram: Hundreds of Instances, Dozens of Technologies            </div><p>One of the questions we always get asked at meet-ups and conversations with...</p>
+
+            <div class="post_info_bottom" style="display:none;"><a href="http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances">Post</a> <span class="via">via</span> <a href="http://instagram-engineering.tumblr.com/">instagram-engineering</a></div></li><li class="like_post like_text_post"><div class="post_info_top" style="display:none;"><a href="http://instagram-engineering.tumblr.com/post/12202313862/storing-hundreds-of-millions-of-simple-key-value">Post</a> <span class="via">via</span> <a href="http://instagram-engineering.tumblr.com/">instagram-engineering</a></div><div class="like_title">
+                Storing hundreds of millions of simple key-value pairs in Redis            </div><p>When transitioning systems, sometimes you have to build a little scaffolding. At...</p>
+
+            <div class="post_info_bottom" style="display:none;"><a href="http://instagram-engineering.tumblr.com/post/12202313862/storing-hundreds-of-millions-of-simple-key-value">Post</a> <span class="via">via</span> <a href="http://instagram-engineering.tumblr.com/">instagram-engineering</a></div></li><li class="like_post like_text_post"><div class="post_info_top" style="display:none;"><a href="http://petrohi.me/post/6323289515/scaling-redis">Post</a> <span class="via">via</span> <a href="http://petrohi.me/">petrohi</a></div><div class="like_title">
+                Scaling Redis            </div><p>When a database is limited to running on a single computer, only certain load can be served with acceptable latency. Adding hardware to...</p>
+
+            <div class="post_info_bottom" style="display:none;"><a href="http://petrohi.me/post/6323289515/scaling-redis">Post</a> <span class="via">via</span> <a href="http://petrohi.me/">petrohi</a></div></li></ul>
+	</section>
+
+
+
+</aside><!-- END#stat-sidebar -->
+
+<section id="stat-articles">
+
+	<article class="stat-text">
+		<section>
+			<p>Posts tagged <span class="tag">scalability</span></p>
+		</section>
+		<div class="stat-clear"></div>
+	</article>
+
+	<article class="stat-text" id="post-9699762917">
+		<header>
+
+				<p class="stat-notes"><a class="stat-bubble" href="http://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism#notes"><span class="stat-point"></span><em>17 notes</em></a> &amp; <a class="stat-disqus" href="http://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism#disqus_thread"></a></p>
+				<time datetime="2011-09-02" pubdate><a rel="bookmark" href="http://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism">September 2, 2011</a></time>
+
+			<h1><a rel="bookmark" href="http://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism">Scalability for Dummies - Part 4: Asynchronism</a></h1>
+		</header>
+		<section>
+			<p>This 4th part of the <a href="http://www.lecloud.net/tagged/scalability">series</a> starts with a picture: please imagine that you want to buy bread at your favorite bakery. &nbsp;So you go into the bakery, ask for a loaf of bread, but there is no bread there!&nbsp;Instead, you are asked to come back in 2 hours when your ordered bread is ready. That&rsquo;s annoying, isn&rsquo;t it?<br /><br />To avoid such a &ldquo;please wait a while&rdquo; - situation, asynchronism needs to be done. &nbsp;And what&rsquo;s good for a bakery, is maybe also good for your web service or web app.<br /></p>
+			<p class="stat-more"><a href="http://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism">Read more &hellip;</a></p>
+		</section>
+		<div class="stat-clear"></div>
+
+				<p class="stat-tumblr-tags">Filed under <a href="http://www.lecloud.net/tagged/scalability">scalability</a><span></span> </p>
+
+	</article>
+
+	<article class="stat-text" id="post-9246290032">
+		<header>
+
+				<p class="stat-notes"><a class="stat-bubble" href="http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache#notes"><span class="stat-point"></span><em>19 notes</em></a> &amp; <a class="stat-disqus" href="http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache#disqus_thread"></a></p>
+				<time datetime="2011-08-22" pubdate><a rel="bookmark" href="http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache">August 22, 2011</a></time>
+
+			<h1><a rel="bookmark" href="http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache">Scalability for Dummies - Part 3: Cache</a></h1>
+		</header>
+		<section>
+			<p>After following <a href="http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database">Part 2</a> of this series, you now have a scalable database solution. You have no fear of storing terabytes anymore and the world is looking fine. But just for you. Your users still have to suffer slow page requests when a lot of data is fetched from the database.&nbsp;The solution is the implementation of a cache.</p><p></p>
+			<p class="stat-more"><a href="http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache">Read more &hellip;</a></p>
+		</section>
+		<div class="stat-clear"></div>
+
+				<p class="stat-tumblr-tags">Filed under <a href="http://www.lecloud.net/tagged/scalability">scalability</a><span></span> </p>
+
+	</article>
+
+
+	<article class="stat-text" id="post-7994751381">
+		<header>
+
+				<p class="stat-notes"><a class="stat-bubble" href="http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database#notes"><span class="stat-point"></span><em>17 notes</em></a> &amp; <a class="stat-disqus" href="http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database#disqus_thread"></a></p>
+				<time datetime="2011-07-24" pubdate><a rel="bookmark" href="http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database">July 24, 2011</a></time>
+
+			<h1><a rel="bookmark" href="http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database">Scalability for Dummies - Part 2: Database</a></h1>
+		</header>
+		<section>
+			<p>After following <a href="/post/7295452622/scalability-for-dummies-part-1-clones">Part 1</a>&nbsp;of this series,&nbsp;your servers can now horizontally scale and you can already serve thousands of concurrent requests. But somewhere down the road your application gets slower and slower and finally breaks down. The reason: your database. It&rsquo;s MySQL, isn&rsquo;t it?</p><p>Now the required changes are more radical than just adding more cloned servers and may even require some boldness.&nbsp;In the end, you can choose from 2 paths:</p>
+			<p class="stat-more"><a href="http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database">Read more &hellip;</a></p>
+		</section>
+		<div class="stat-clear"></div>
+
+				<p class="stat-tumblr-tags">Filed under <a href="http://www.lecloud.net/tagged/scalability">scalability</a><span></span> </p>
+
+	</article>
+
+
+	<article class="stat-text" id="post-7295452622">
+		<header>
+
+				<p class="stat-notes"><a class="stat-bubble" href="http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones#notes"><span class="stat-point"></span><em>43 notes</em></a> &amp; <a class="stat-disqus" href="http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones#disqus_thread"></a></p>
+				<time datetime="2011-07-06" pubdate><a rel="bookmark" href="http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones">July 6, 2011</a></time>
+
+			<h1><a rel="bookmark" href="http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones">Scalability for Dummies - Part 1: Clones</a></h1>
+		</header>
+		<section>
+			<p><img alt="image" src="https://66.media.tumblr.com/tumblr_lnwf0lCCIo1qakxac.gif" /></p><p>Just recently I was asked what it would take to make a web service massively scalable. My answer was lengthy and maybe it is also for other people interesting. So I share it with you here in my blog and split it into parts to make it easier to read. New parts are released on a regular basis. Have fun and your comments are always welcomed!</p><p><em>The other parts of the series &ldquo;<a href="/tagged/scalability">Scalability for Dummies</a>&rdquo; you can (soon) find <a href="/tagged/scalability">here</a>.</em></p><p><strong>Part 1 - Clones</strong></p><p>Public servers of a scalable web service are hidden behind a load balancer. &nbsp;This load balancer evenly distributes load (requests from your users) onto your group/cluster of &nbsp;application servers. That means that if, for example, user Steve interacts with your service, he may be served at his first request by server 2, then with his second request by server 9 and then maybe again by server 2 on his third request.&nbsp;</p><p></p>
+			<p class="stat-more"><a href="http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones">Read more &hellip;</a></p>
+		</section>
+		<div class="stat-clear"></div>
+
+				<p class="stat-tumblr-tags">Filed under <a href="http://www.lecloud.net/tagged/scalability">scalability</a><span></span> </p>
+
+	</article>
+</section><!-- END#stat-articles -->
+</div><!-- END#stat-wrapper -->
+<footer id="stat-footer">
+	<p>We love <a href="http://www.tumblr.com/" rel="external">Tumblr</a> <span>&amp;</span> <a href="http://www.tumblr.com/theme/3292" rel="external">Stationery</a> by <a href="http://thijsjacobs.com/" rel="external">Thijs</a></p>
+</footer>
+</body>
+</html>
