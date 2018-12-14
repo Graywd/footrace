@@ -72,7 +72,7 @@ class Role(db.Document):
 
 class User(UserMixin, db.Document):
     email = db.EmailField(max_length=255, unique=True)
-    username = db.StringField(required=True, unique=True)
+    username = db.StringField(unique=True)
     role = db.ReferenceField('Role', required=True)
     password_hash = db.StringField(max_length=128, required=True)
     confirmed = db.BooleanField(default=False)
@@ -82,7 +82,7 @@ class User(UserMixin, db.Document):
     member_since = db.DateTimeField(default=datetime.utcnow)
     last_seen = db.DateTimeField(default=datetime.utcnow)
     avatar_hash = db.StringField(max_length=32)
-    posts = db.EmbeddedDocumentListField('Post')
+    posts = db.ListField(db.ReferenceField('Post'))
 
     meta = {
         'indexes': ['email', 'username'],
